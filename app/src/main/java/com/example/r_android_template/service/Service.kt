@@ -111,4 +111,9 @@ object Service {
             }
         ]
     """
+
+    //Pobieranie wartości JSON ze stałej prywatnej
+    fun getJson() : String{
+        return estateJsonString
+    }
 }

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">r_android_template</string>
+
+    <string name="estate_number">Estate number</string>
+    <string name="area">Area</string>
+    <string name="land">Land</string>
+    <string name="district">District</string>
+    <string name="show_estate_number">Show estate number</string>
+
+    <string name="toast_error">Please select a land first</string>
 </resources>

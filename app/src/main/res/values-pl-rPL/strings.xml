@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">r_android_template</string>
+
+    <string name="estate_number">Numer nieruchomości</string>
+    <string name="area">Powierzchnia</string>
+    <string name="land">Grunt</string>
+    <string name="district">Dzielnica</string>
+    <string name="show_estate_number">Pokaż numer nieruchomości</string>
+
+    <string name="toast_error">Proszę najpierw wybrać ziemię</string>
+</resources>
