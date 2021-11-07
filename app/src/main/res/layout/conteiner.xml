@@ -8,44 +8,71 @@
         android:id="@+id/icon"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_below="@id/estate_number"
+        android:layout_below="@id/linearLayoutUp"
         android:layout_centerVertical="true"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:scaleType="center"
         android:src="@drawable/ic_map" />
 
-    <TextView
-        android:id="@+id/estate_number"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayoutUp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/icon"
-        android:text="@string/estate_number"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/area"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/estate_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="@string/estate_number"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/land"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="@string/land"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDown"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/icon"
         android:layout_toEndOf="@id/icon"
-        android:text="@string/area"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/land"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_toEndOf="@id/estate_number"
-        android:text="@string/land" />
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="@string/area"
+            android:textSize="12sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/district"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/land"
-        android:layout_alignTop="@id/area"
-        android:text="@string/district" />
+        <TextView
+            android:id="@+id/district"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="@string/district"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
 </RelativeLayout>
