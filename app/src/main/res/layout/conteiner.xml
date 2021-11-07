@@ -29,18 +29,18 @@
             android:layout_weight="3"
             android:maxLines="1"
             android:text="@string/estate_number"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSize"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/land"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="@dimen/marginStart"
             android:layout_weight="3"
             android:maxLines="1"
             android:text="@string/land"
-            android:textSize="12sp" />
+            android:textSize="@dimen/textSize" />
 
 
     </LinearLayout>
@@ -60,18 +60,18 @@
             android:layout_weight="3"
             android:maxLines="1"
             android:text="@string/area"
-            android:textSize="12sp"
+            android:textSize="@dimen/textSize"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/district"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="@dimen/marginStart"
             android:layout_weight="3"
             android:maxLines="1"
             android:text="@string/district"
-            android:textSize="12sp" />
+            android:textSize="@dimen/textSize" />
 
     </LinearLayout>
 
