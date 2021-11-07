@@ -1,9 +1,9 @@
 package com.example.r_android_template.view
 
 class Model(
-    val area: Double,
-    val district: String,
-    val estateNo: String,
-    val id: Int,
-    val land: String
+    val area: Double = 0.0,
+    val district: String = "",
+    val estateNo: String = "",
+    val id: Int = 0,
+    val land: String = ""
 )

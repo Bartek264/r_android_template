@@ -3,6 +3,7 @@ package com.example.r_android_template.view
 import android.content.Context
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,9 +15,9 @@ import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var recyclerView: RecyclerView
+    lateinit var listView: ListView
     lateinit var list: ArrayList<Model>
-    lateinit var adapting: Adapter
+    lateinit var adapting: AdapterList
 
     lateinit var showEstateBtn: Button
     lateinit var myToast: Toast
@@ -27,17 +28,12 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         showEstateBtn = findViewById(R.id.showNumberBtn)
+        listView = findViewById(R.id.list_view)
 
         list = ArrayList()
 
-        recyclerView = findViewById(R.id.recycler_view)
-        recyclerView.setHasFixedSize(true)
-
-        val layoutManager = LinearLayoutManager(this)
-        recyclerView.layoutManager = layoutManager
-
-        adapting = Adapter(context = this, list)
-        recyclerView.adapter = adapting
+        adapting = AdapterList(list, this)
+        listView.adapter = adapting
 
         showEstateBtn.setOnClickListener {
             showToast()
